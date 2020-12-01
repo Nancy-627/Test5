@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litrpal>
+<dbname value="MemoStore">
+    <!--    <dbname>用于指定数据库名-->
+
+</dbname>
+<version value="1"></version>
+<!--    <version>指定数据库版本号-->
+<list>
+    <mapping class="test_5.Memo"></mapping>
+</list>
+<!--    <list>标签用于指定所有的映射模型-->
+</litrpal>

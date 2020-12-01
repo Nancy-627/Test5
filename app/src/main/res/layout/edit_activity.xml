@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDF5E6">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+           android:gravity="center_horizontal"
+            android:text="备忘录"
+            android:textSize="22sp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/edit_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:text="当前时间"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:hint="输入标题"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFF0"
+            android:gravity="start"
+            android:hint="在此输入内容"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/insert_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/picture"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传图片"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_picker_one"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image_picker_two"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image_picker_three"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:visibility="gone" />
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/memo_is_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否设置提醒"/>
+
+        <TextView
+            android:id="@+id/check_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="请选择日期"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/check_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="请选择时间"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="#FFFFF0"
+            android:text="保存"/>
+
+        <Button
+            android:id="@+id/btn_clean"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="#FFFFF0"
+            android:text="清空"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
